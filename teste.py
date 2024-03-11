@@ -15,9 +15,9 @@ def mostra_itens():
 
 mostra_itens() 
 
-teste = int(input("Digite o indice do produto que deseja deletar:"))
+testes = int(input("Digite o indice do produto que deseja deletar:"))
 
-deletar_produto(teste)
+deletar_produto(testes)
 
 mostra_itens()
     
