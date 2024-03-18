@@ -1,13 +1,16 @@
-class Cidade():
-    def __init__(self,id,nome):
-        self.id = int(id)
-        self.nome = str(nome)
+from Cidade import Cidade
+from Pessoa import Pessoa
 
+c1 = Cidade()
+c2 = Cidade(nome = "Porto Alegre")
+c3 = Cidade(1 , "Capão da Canoa")
 
+# print(c1)
+# print(c2)
+# print(c3)
 
-class Pessoa():
-    def __init__(self):
-        self.id = int()
-        self.nome = str()
-        self.idade = int()
-        self.cidade = Cidade(12345,"Porto Alegre")
+p1 = Pessoa("Luis Henrique",21,c2)
+p2 = Pessoa("João",20)
+p3 = Pessoa("Maria",25,c1)
+p4 = Pessoa("Joana",cid = c3)
+p5 = Pessoa("Julia",idade = 32)

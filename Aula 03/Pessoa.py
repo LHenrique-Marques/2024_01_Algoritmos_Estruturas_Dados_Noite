@@ -12,6 +12,3 @@ class Pessoa:
         Idade : {self.idade}
         {self.cidade}
         """
-
-henrique = Pessoa("Henrique",21,Cidade("Porto Alegre",51))
-print(henrique)
