@@ -4,6 +4,5 @@ class Categoria():
         self.nome = nome
     
     def __str__(self):
-        return f"""
-        Categoria: {self.nome}
+        return f"""{self.nome}
         """

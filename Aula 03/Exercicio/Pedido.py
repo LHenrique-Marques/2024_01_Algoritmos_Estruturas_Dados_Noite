@@ -6,14 +6,21 @@ class Pedido():
         self.produtos = []
         self.cliente = pessoa
     
-    def __str__(self):
+    def __str__(self):   
+        x = ""
+        for p in self.produtos:
+            x += str(p) + "\n"
         return f"""
         Cliente: {self.cliente}
         Endereço: {self.end}
-        Produtos: {self.produtos}
+        Produtos: {x}
         """
     def adiciona_produto(self,novo_produto):
         self.produtos.append(novo_produto)
+        soma = 0
+        for p in self.produtos:
+            soma += p.preco
+        return soma
     
     def calcula_pedido(self):
         calculo = 0
