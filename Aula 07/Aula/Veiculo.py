@@ -12,3 +12,6 @@ class Veiculo(ABC):
         print(f"""
               Modelo: {self.modelo}
               Ano: {self.ano}""")
+    
+    def desligar(self):
+        print("Veiculo Desligado.")
